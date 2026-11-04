@@ -1,66 +1,25 @@
-# MISpal SchoolWare - Comprehensive School Management System
+# MISpal demo
 
-A full-featured school management and student information system inspired by VSware.ie, built with Node.js, Express, MongoDB, and React.
+A self-contained, front-end-only demo of the MISpal school management platform.
 
-## Features
+## What is in here
 
-### For All Users
-- **Authentication & Authorization** - Role-based access control (Admin, Principal, Teacher, Parent, Student)
-- **Dashboard** - Personalized dashboards for each user role
-- **Internal Messaging (VS-Mail)** - Secure communication system within the school
-- **Notifications** - Real-time updates and alerts
+- `index.html`: the whole demo (HTML, CSS and vanilla JavaScript in one file).
+- `videoloadtest2.MP4`: the custom loading screen video. It plays on first visit and between screens.
+- `vercel.json`: static hosting config with basic security headers.
 
-### For Administrators & Principals
-- **User Management** - Create and manage users (students, teachers, parents, staff)
-- **Class Management** - Organize classes, assign teachers and students
-- **Subject Management** - Define subjects and curricula
-- **Timetable Management** - Create and publish timetables
-- **Reports & Analytics** - Comprehensive reporting on all aspects of school operations
-- **Financial Management** - Track payments, fees, and generate invoices
+## Portals
 
-### For Teachers
-- **Attendance Tracking** - Mark and manage student attendance
-- **Behavior Logs** - Record positive and negative behavior incidents
-- **Assessment Management** - Create exams, record grades, publish results
-- **Class Communication** - Send messages to students and parents
-- **Timetable Access** - View personal teaching schedule
-- **Student Records** - Access student information and performance data
+- Admin and teacher portals (attendance, timetable builder, classes, assessments, enrolment, permissions, behaviour, substitutions and more).
+- Parent onboarding and parent portal.
+- Student portal for both demo schools.
 
-### For Parents
-- **Child Monitoring** - View all children's academic progress
-- **Attendance Reports** - Track child's attendance records
-- **Behavior Notifications** - Receive alerts about behavior incidents
-- **Assessment Results** - View published exam results and grades
-- **Fee Management** - View and pay school fees online
-- **Messaging** - Communicate with teachers and school administration
+## Important limits
 
-### For Students
-- **Personal Dashboard** - View academic performance and schedules
-- **Timetable** - Access class schedule
-- **Results** - View published assessment results
-- **Attendance Record** - Monitor personal attendance
-- **Behavior Log** - View behavior records and points
-- **Messaging** - Communicate with teachers
+This is a demo. All data lives in memory in the browser and resets on refresh.
+There is no real authentication, no server and no database. Do not enter real personal data.
+A production build needs a real backend with authentication, role based access control, tenant isolation, encryption and audit logging, plus a DPIA before real pupil data is used.
 
-## Technology Stack
+## Run locally
 
-- **Backend:** Node.js, Express, MongoDB, Mongoose, Socket.IO, JWT
-- **Frontend:** React (to be implemented)
-
-## Installation & Setup
-
-1. Install dependencies: `npm install`
-2. Configure environment: Copy `.env.example` to `.env` and update values
-3. Start MongoDB
-4. Run server: `npm run dev` (development) or `npm start` (production)
-
-## API Endpoints
-
-See full API documentation in the README sections above for all available endpoints covering:
-- Authentication, Users, Students, Teachers, Classes
-- Timetables, Attendance, Behavior, Assessments
-- Messages, Payments, Reports & Analytics
-
-## License
-
-MIT
+Open `index.html` in a browser, or serve the folder with any static server, for example `npx serve .`.
